@@ -1,6 +1,6 @@
 # Proyecto-2
 
-# Proyecto2M2 sistema de Votación en JavaScript
+# Proyecto2 Módulo 2 sistema de Votación en JavaScript
 Hola!! Bienvenidos a este proyecto 2 que tiene como objetivo desarrollar un programa en JavaScript que permita a los usuarios crear encuestas, votar y ver los resultados aplicando comandos en terminal. Este programa se podrá ejecutar en el navegador, para visualizarse a través de la consola, enlazado a un archivo HTML.
 
 
