@@ -106,25 +106,25 @@ function mostrarResultadosEncuesta(){
   ```
 Esta función muestra los resultados de las encuestas. Utilice el método forEach para recorrer todas las encuestas en encuestasZapatos y muestrar la pregunta junto con la opción elegida por cada votante.
 
-##  Paso 4: Creé una función que guarda los resultados:
+##  Paso 4 Se crea la función mostrarResultadosEncuesta.
+Ésta tiene como objetivo mostrar los resultados de una encuesta:
 
 ```scss
-function guardarResultados(){
-    encuestaGuardada = encuestasZapatos.map(zapato =>{ 
-      return {pregunta: zapato.pregunta, votoElegido: zapato.votoElegido}
-
-
-    } )
-
-
+ function mostrarResultadosEncuesta(encuesta) {
+    encuesta.forEach((pregunta) => {
+        console.log(`Resultado pregunta "${pregunta.pregunta}": ${pregunta.votoElegido}`);
+    });
 }
-let encuestaGuardada = []
 
   ```
-Esta función guarda los resultados de las encuestas en una nueva variable llamada encuestaGuardada. utilice el método map para transformar cada encuesta en un objeto que contiene la pregunta y la opción elegida, y luego asignar este objeto a encuestaGuardada.
+La función mostrarResultadosEncuesta tiene como objetivo mostrar los resultados de una encuesta. Aquí está lo que hace:
 
-Finalmente llame a la funcion "crearEncuestaZapatos() para iniciar el proceso de creación de encuestas.
+Recibe un parámetro llamado encuesta, que debe ser un arreglo de objetos. Cada objeto representa una pregunta de la encuesta y contiene las siguientes propiedades:
+pregunta: La pregunta en sí.
+votoElegido: La opción elegida por los votantes (ya sea la opción 1 o la opción 2).
+Utiliza el método forEach para iterar sobre cada elemento del arreglo encuesta.
+Dentro del bucle, muestra en la consola el resultado de cada pregunta junto con la opción elegida. El formato es: "Resultado pregunta [pregunta]: [votoElegido]".
+Por ejemplo, si tuvieras una encuesta sobre marcas de PC Gamers con dos preguntas (“¿Cuál es tu marca favorita?” y “¿Prefieres AMD o Intel?”), la función mostrarResultadosEncuesta mostraría los resultados de la siguiente manera:
 
-```scss 
-  crearEncuestaZapatos();
- ```
+Resultado pregunta "¿Cuál es tu marca favorita?": ASUS
+Resultado pregunta "¿Prefieres AMD o Intel?": AMD
